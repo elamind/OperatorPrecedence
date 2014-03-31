@@ -4,12 +4,21 @@
    <title>C Operator Precedence</title>
    
    <link rel="stylesheet" type="text/css" href="style/main.css">
+   
+   <script>
+      function changeText() {
+         document.getElementById("expression").innerHTML = "YAY";
+      }
+   
+   </script>
 </head>
 <body>
    <h1>C Operator Precedence</h1>
 
    <p id="expression"> Test </p>
-
+   
+   <input id="userInput" type="text">
+   <input type="button" value="Submit" onClick="changeText()">
    
    <script src="js/operators.js"></script>
    <script src="expression_creator.js"></script>
