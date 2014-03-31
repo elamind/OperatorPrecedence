@@ -1,0 +1,73 @@
+Level 1
+parentheses
+brackets 
+arrow 
+dot 
+
+Level 2
+logicalNot 
+bitwiseNot 
+increment 
+decrement 
+unaryPlus 
+unaryMinus 
+dereference 
+typecast 
+sizeof 
+
+Level 3
+multiply
+divide
+modulus
+
+Level 4
+add
+subtract
+
+Level 5
+bitShiftLeft
+bitShiftRight
+
+Level 6
+less
+lessThanEqual
+greater
+greaterThanEqual
+
+Level 7
+equal
+notEqual
+
+Level 8
+bitAnd
+
+Level 9
+bitXor
+
+Level 10
+bitOr
+
+Level 11
+logicalAnd
+
+Level 12
+logicalOr
+
+Level 13
+ternaryOp
+
+Level 14
+assigns
+addAssigns
+subtractAssigns
+multiplyAssigns
+divideAssigns
+modulusAssigns
+andAssigns
+xorAssigns
+orAssigns
+leftShiftAssigns
+rightShiftAssigns
+
+Level 15
+comma
