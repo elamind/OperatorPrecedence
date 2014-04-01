@@ -3,7 +3,8 @@
 var NUM_OPS = 6;
 
 function getOp() {
-   //returns an operator randomly (uses probability consts)
+   var prob = Math.random()*100 + 1;
+   //if elses probability constants 
 }
 
 function getNewExpression(exp, op) {
