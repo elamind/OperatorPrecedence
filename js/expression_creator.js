@@ -1,23 +1,44 @@
 //creates an expression
+//Groups of Operators
+//() [] -> .
+//! ~ *
+//++ --
+//+ -
+//* / %
+//>> <<
+//&
+//|
+//^ 
+//&&
+//||
+//Rare Group: , ?: + - (type) sizeof = += -= /= %= &= ^= |= >>= <<=
 //Change probabilities of certain operators
 var NUM_OPS = 6;
 
 function getOp() {
-   var prob = Math.random()*100 + 1;
-   //if elses probability constants 
+   switch(Math.random()*12) {
+   }
 }
 
 function getNewExpression(exp, op) {
-   //switch using arity
    //possibly call a function to determine whether to add parens
+   switch(op.arity) {
+      case 1:
+         break;
+      case 2:
+         break;
+      case 3:
+         break;
+   }
 }
 
 function createExpression() {
-   //use NUMOPS number of operators
    var exp = ""; 
+
    for(int i = 0; i < NUM_OPS; i++) {
       var op = getOp();
-      getNewExpression(exp, op);
+      exp = getNewExpression(exp, op);
    }
+
    return exp;
 }
