@@ -30,26 +30,30 @@ function getOp() {
    return pickGroup(groups[Math.random()*15+1]);
 }
 
-function getNewExpression(exp, op) {
-   //create an expression using op, then somehow add it into exp
-   //possibly call a function to determine whether to add parens
+function getExpression(exp, num) {
+   if(num<=0) {
+      return "";
+   }
+
+   var op = getOp(); 
+   //add operator to expression, possibly use exp to define
    switch(op.arity) {
-      case 1:
+      case 1: 
          break;
       case 2:
          break;
       case 3:
          break;
    }
+   exp += getExpression(exp, num--);
+
+   return exp;
 }
 
 function createExpression() {
-   var exp = ""; 
-
-   for(int i = 0; i < NUM_OPS; i++) {
-      var op = getOp();
-      exp = getNewExpression(exp, op);
-   }
-
+   var exp = "";
+   var p = Math.random()*NUM_OPS/2 + 1;
+   exp = getExpression(p) + getExpression(NUM_OPS - p); 
+   
    return exp;
 }
