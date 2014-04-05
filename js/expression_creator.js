@@ -45,7 +45,7 @@ function getExpression(exp, num) {
       case 3:
          break;
    }
-   exp += getExpression(exp, num--);
+   exp += getExpression(exp, --num);
 
    return exp;
 }
