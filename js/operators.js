@@ -1,3 +1,5 @@
+//Consider lvalues...
+
 //constructor for an Operator
 //Each Operator must have 3 properties: Associativity, Arity, and Level
 //Associativity can be either left to right or right to left 
